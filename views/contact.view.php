@@ -11,21 +11,23 @@
 			<p>Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
 
 			<?php
-			if (empty($arrayErrores)) {
-				echo '<div class= "alert alert-info">';
-				echo 'First Name: ' . $_POST['firstName'] . '<br>';
-				echo 'Subject: ' . $_POST['subject'] . '<br>';
-				echo 'Email: ' . $_POST['email'] . '<br>';
-				echo 'Message: ' . $_POST['message'] . '<br>';
-				echo '</div>';
-			} else {
-				echo '<div class= "alert alert-danger">';
-				echo '<ul>';
-				foreach ($arrayErrores as $error) {
-					echo '<li>' . $error . '</li>';
+			if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+				if (empty($arrayErrores)) {
+					echo '<div class= "alert alert-info">';
+					echo 'First Name: ' . $_POST['firstName'] . '<br>';
+					echo 'Subject: ' . $_POST['subject'] . '<br>';
+					echo 'Email: ' . $_POST['email'] . '<br>';
+					echo 'Message: ' . $_POST['message'] . '<br>';
+					echo '</div>';
+				} else {
+					echo '<div class= "alert alert-danger">';
+					echo '<ul>';
+					foreach ($arrayErrores as $error) {
+						echo '<li>' . $error . '</li>';
+					}
+					echo '</ul>';
+					echo '</div>';
 				}
-				echo '</ul>';
-				echo '</div>';
 			}
 			?>
 
