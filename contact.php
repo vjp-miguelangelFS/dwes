@@ -18,3 +18,4 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 require "views/utils/utils.php";
 require "views/contact.view.php";
 
+?>
