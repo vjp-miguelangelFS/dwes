@@ -17,7 +17,10 @@
 					echo 'First Name: ' . $_POST['firstName'] . '<br>';
 					echo 'Subject: ' . $_POST['subject'] . '<br>';
 					echo 'Email: ' . $_POST['email'] . '<br>';
-					echo 'Message: ' . $_POST['message'] . '<br>';
+					if ($_POST['message'] != '') {
+						echo 'Message: ' . $_POST['message'] . '<br>';
+					}
+
 					echo '</div>';
 				} else {
 					echo '<div class= "alert alert-danger">';
