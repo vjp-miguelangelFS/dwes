@@ -44,6 +44,7 @@
       $idCategoria = 'category1';
       $categoriaActiva = 'active';
       shuffle($arrayImagenes);
+      
       include __DIR__ . '/../partials/imagegallery.part.php'
       ?>
 
@@ -55,6 +56,7 @@
       $idCategoria = 'category2';
       $categoriaActiva = '';
       shuffle($arrayImagenes);
+
       include __DIR__ . '/../partials/imagegallery.part.php'
       ?>
 
@@ -66,6 +68,7 @@
       $idCategoria = 'category3';
       $categoriaActiva = '';
       shuffle($arrayImagenes);
+
       include __DIR__ . '/../partials/imagegallery.part.php'
       ?>
 
