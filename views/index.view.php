@@ -1,6 +1,6 @@
-<?php include __DIR__ . '/../partials/inicio-doc.part.php' ?>
+<?php include __DIR__ . '/partials/inicio-doc.part.php' ?>
 
-<?php include __DIR__ . '/../partials/nav.part.php' ?>
+<?php include __DIR__ . '/partials/nav.part.php' ?>
 
 <!-- Principal Content Start -->
 <div id="index">
@@ -44,8 +44,8 @@
       $idCategoria = 'category1';
       $categoriaActiva = 'active';
       shuffle($arrayImagenes);
-      
-      include __DIR__ . '/../partials/imagegallery.part.php'
+
+      include __DIR__ . '/partials/imagegallery.part.php'
       ?>
 
       <!-- End of First category pictures -->
@@ -57,7 +57,7 @@
       $categoriaActiva = '';
       shuffle($arrayImagenes);
 
-      include __DIR__ . '/../partials/imagegallery.part.php'
+      include __DIR__ . '/partials/imagegallery.part.php'
       ?>
 
       <!-- End of second category pictures -->
@@ -69,7 +69,7 @@
       $categoriaActiva = '';
       shuffle($arrayImagenes);
 
-      include __DIR__ . '/../partials/imagegallery.part.php'
+      include __DIR__ . '/partials/imagegallery.part.php'
       ?>
 
       <!-- Third Category Pictures -->
@@ -145,4 +145,4 @@
   </div>
 </footer>
 
-<?php include __DIR__ . '/../partials/fin-doc.part.php' ?>
+<?php include __DIR__ . '/partials/fin-doc.part.php' ?>
