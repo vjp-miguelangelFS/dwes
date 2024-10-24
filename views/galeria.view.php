@@ -9,14 +9,14 @@
             <h1>GALERIA</h1>
             <hr>
 
-            <?php if ($_SERVER('REQUEST_METHOD') === 'POST') : ?>
+            <?php if ($_SERVER['REQUEST_METHOD'] === 'POST') : ?>
 
-                <div class="alert alcert-<?= empty($errores) ? 'info' : 'danger'; ?> alert-dismissibre" role="alert">
+                <div class="alert alert-<?=empty($errores) ? 'info' : 'danger';?> alert-dismissibre" role="alert">
                     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                         <span aria-hidden="true">x</span>
                     </button>
                     <?php if (empty($errores)) : ?>
-                        <p><?= $error ?></p>
+                        <p><?= $mensaje ?></p>
                     <?php else : ?>
                         <ul>
                             <?php foreach ($errores as $error) : ?>
